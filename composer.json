@@ -1,0 +1,50 @@
+{
+  "name": "dazza-dev/pulse-duplicate-queries",
+  "description": "Laravel Pulse Duplicate Queries provides a ready-to-use list of duplicate queries for your Laravel application.",
+  "keywords": [
+    "pulse",
+    "duplicate",
+    "queries"
+  ],
+  "type": "library",
+  "license": "MIT",
+  "require": {
+    "php": ">=8.1",
+    "laravel/framework": "^10.0|^11.0|^12.0",
+    "laravel/pulse": "^1.0"
+  },
+  "require-dev": {
+    "larastan/larastan": "^2.0",
+    "laravel/pint": "^1.18",
+    "orchestra/testbench": "^8.27"
+  },
+  "config": {
+    "preferred-install": "dist",
+    "sort-packages": true,
+    "optimize-autoloader": true
+  },
+  "minimum-stability": "stable",
+  "authors": [
+    {
+      "name": "Andres Daza",
+      "email": "adaza90@outlook.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "DazzaDev\\PulseDuplicateQueries\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "DazzaDev\\PulseDuplicateQueries\\Tests\\": "tests/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "DazzaDev\\PulseDuplicateQueries\\PulseDuplicateQueriesServiceProvider"
+      ]
+    }
+  }
+}
